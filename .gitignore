@@ -1,0 +1,12 @@
+/Frontend/node_modules
+/Frontend/dist
+/Frontend/tmp
+/Frontend/out-tsc
+
+
+
+/Backend/HELP.md
+/Backend/target/
+/Backend/!.mvn/wrapper/maven-wrapper.jar
+/Backend/!**/src/main/**/target/
+/Backend/!**/src/test/**/targe
