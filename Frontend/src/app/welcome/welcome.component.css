@@ -1,0 +1,57 @@
+/* Banner section */
+.banner-image-placeholder {
+  background-color: #54585a;
+  width: 100%;
+  height: 500px;
+}
+
+/* Banner section end */
+
+/* Explore section */
+#explore {
+  width: 100%;
+  margin: 20px 0;
+  /* border: 1px solid orange; */
+}
+
+.category-set{
+  display: flex;
+}
+
+.category-set .wide {
+  flex: 1.5;
+}
+
+.category-set .narrow {
+  flex: 1;
+}
+
+
+.card-image-placeholder {
+  background-color: grey;
+  width: 100%;
+  height: 300px;
+}
+
+.card {
+  /* border: 1px solid red; */
+}
+/* Explore section end */
+
+@media screen and (max-width: 62rem) { /* Medium Viewport */
+  .category-set{
+    display: flex;
+  }
+
+  .category-set .wide,
+  .category-set .narrow {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 48rem) { /* Medium Viewport */
+  .category-set{
+    display: flex;
+    flex-flow: column;
+  }
+}
