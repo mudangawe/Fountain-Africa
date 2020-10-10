@@ -11,7 +11,7 @@
 
 #nav .navbar-nav a {
     color: #68c2e8;
-    
+
 }
 
 #nav .navbar-nav a:hover {
@@ -28,4 +28,10 @@
 
 #nav .navbar-nav .log a:hover {
     border: none;
+}
+
+@media screen and (max-width: 48rem) {
+  #nav .log-divider {
+    display: none;
+  }
 }
