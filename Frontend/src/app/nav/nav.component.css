@@ -1,0 +1,31 @@
+/* Navigation */
+#nav {
+    background-color: #fff;
+}
+
+#nav .navbar-brand img {
+    width: 80px;
+    height: auto;
+    /* border: 1px solid red; */
+}
+
+#nav .navbar-nav a {
+    color: #68c2e8;
+    
+}
+
+#nav .navbar-nav a:hover {
+    color: #fff;
+    background-color: #68c2e8;
+    border-radius: 5px;
+}
+
+#nav .navbar-nav .log a {
+    font-weight: bold;
+    border: 2px solid #0e1e40;
+    border-radius: 5px;
+}
+
+#nav .navbar-nav .log a:hover {
+    border: none;
+}
