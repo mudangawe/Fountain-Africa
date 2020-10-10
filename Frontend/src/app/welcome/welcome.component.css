@@ -3,12 +3,35 @@
   height: 80vh;
 }
 
-.banner-image-placeholder {
-  background-color: #54585a;
-  width: 100%;
-  height: 500px;
+#banner .carousel-item .banner-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
+#banner .carousel-item .one {
+  background-image: url('../../assets/images/banner/banner1-min.webp');
+}
+
+#banner .carousel-item .two {
+  background-image: url('../../assets/images/banner/banner2-min.webp');
+}
+
+#banner .carousel-item .three {
+  background-image: url('../../assets/images/banner/banner3-min.webp');
+}
+
+#banner .carousel-item .layover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(84, 88, 90, 0.2);
+}
+
+#banner a .carousel-control-prev-icon,
+#banner a .carousel-control-next-icon {
+  width: 50px;
+  height: 50px;
+}
 /* Banner section end */
 
 /* Explore section */
@@ -109,11 +132,6 @@
   background-color: rgba(84, 88, 90, 0.5);
 }
 
-/* .card-image-placeholder {
-  background-color: grey;
-  width: 100%;
-  height: 300px;
-} */
 /* Explore section end */
 
 /* Why Us section */
@@ -140,7 +158,7 @@
   margin: 0 auto;
 }
 .content-text p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 /* Why Us section end */
