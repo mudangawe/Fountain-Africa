@@ -1,20 +1,29 @@
 /* Banner section */
+#banner {
+  width: 100%;
+}
+
 #banner .call-to-action {
   position: absolute;
   top: 50vh;
-  left: 40vw;
-  width: fit-content;
+  left: 45vw;
+  width: 150px;
+  height: 50px;
   margin: 0 auto;
   z-index: 1;
 }
 
 #banner .call-to-action a {
   color: #fff;
-  background-color: rgba(255, 69, 0, 0.6);
+  font-size: 1.2rem;
+  font-weight: 500px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(238, 83, 98, 0.6);
 }
 
 #banner .call-to-action a:hover {
-  background-color: rgba(255, 69, 0, 0.8);
+  background-color: rgba(238, 83, 98, 0.8);
 }
 
 #banner .banner-image {
@@ -55,7 +64,7 @@
 /* Explore section */
 #explore {
   width: 100%;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
   /* border: 1px solid orange; */
 }
 
@@ -183,6 +192,16 @@
 
 @media screen and (max-width: 62rem) { /* Medium Viewport */
   /* Banner section */
+  #banner .call-to-action {
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+  }
+
+  #banner .call-to-action a {
+    font-size: 1.1rem;
+  }
+
   #banner .banner-image {
     height: 65vh;
   }
@@ -202,6 +221,16 @@
 
 @media screen and (max-width: 48rem) { /* Small Viewport */
   /* Banner section */
+  #banner .call-to-action {
+    position: absolute;
+    top: 25vh;
+    left: 35vw;
+  }
+
+  #banner .call-to-action a {
+    font-size: 1rem;
+  }
+
   #banner .banner-image {
     height: 40vh;
   }
