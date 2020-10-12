@@ -9,9 +9,18 @@
     /* border: 1px solid red; */
 }
 
-#nav .navbar-nav a {
-    color: #68c2e8;
+#nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 2;
+    background-color: rgba(49, 133, 252, 0.4);
+}
 
+#nav .navbar-nav a {
+    /* color: #68c2e8; */
+    color: #fff;
 }
 
 #nav .navbar-nav a:hover {
@@ -29,6 +38,10 @@
 #nav .navbar-nav .log a:hover {
     border: none;
 }
+
+#nav .log-divider {
+    color: white;
+  }
 
 @media screen and (max-width: 48rem) {
   #nav .log-divider {
