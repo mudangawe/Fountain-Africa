@@ -2,19 +2,19 @@
 .footer-wrap {
     display: flex;
     width: 100%;
-    height: 30vh;
+    height: 20vh;
 }
 
 #bottom-nav {
     flex: 1.5;
     height: 100%;
-    background-color: #68c2e8;
+    background-color:  #403f4c;
 }
 
 #call-to-action {
     flex: 1;
     height: 100%;
-    background-color: #0e1e40;
+    background-color: #6c67a7;
 }
 
 @media screen and (max-width: 62rem) {/* Medium View Port */
@@ -32,6 +32,6 @@
 
     #bottom-nav,
     #call-to-action {
-        height: 30vh;
+        height: 20vh;
     }
 }
