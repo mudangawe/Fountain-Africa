@@ -1,0 +1,60 @@
+<section id="classes_box">
+    <section id="classes_header">
+        <div >
+
+        </div>
+    </section>
+    <section id="classes_body">
+        <div id="classes_navigation">
+            <h6>My Stuff</h6>
+            <ul>
+                <li [ngClass]="{'active':tab ==='subject'}" (click)="onClick(0)">
+                    <a>Courses </a>
+                </li> 
+                <li  [ngClass]="{'active':tab === 'practise'}" (click)="onClick(1)">Practise</li>
+            </ul>
+            <h6>My Account</h6>
+            <ul>
+                <li [ngClass]="{'active':tab ==='profile'}" (click)="onClick(2)">
+                    <a>Profile </a>
+                </li>
+                <li [ngClass]="{'active':tab ==='progress'}" (click)="onClick(3)">
+                    <a>Progress </a>
+                </li> 
+            </ul>
+        </div>
+        <section id="classes_content" style="position: relative;">
+            <div id="Content_heading">
+                <h5>Content</h5> 
+                <button class="btn btn-primary" style="height: 2.2rem;" (click)="openDialog()"> Edit Subjects</button>
+            </div>
+            <div id="classes_content_body">
+                <div class="subject" *ngFor="let subject of collection | paginate:config ; last as last;">
+                    <div class="subject_header">
+                        <h6>{{subject.name}}</h6>
+                    </div>
+                    <hr>
+                    <div class="subject_body" *ngFor="let chapter of subject.chapter | slice:0:4; index as i">
+                        <ul>
+                            <li>{{chapter.name}}   <button *ngIf="i==0"  class="btn btn-primary"> Start</button></li>
+                           
+                        </ul>
+                    </div>
+                </div> 
+                <div class="add_subject" style="background-color: #D3D3D3;" >
+                    <div class="add_subject_body">
+                        <i class="fa fa-plus-circle  fa-3x" aria-hidden="true"></i>
+                        <br>
+                        <span>Add new subject</span>
+                    </div>
+                </div> 
+            </div>
+            <div style="text-align:center" id="pagination"> 
+                <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+            </div>
+              
+        </section>
+       
+    </section>
+   
+</section>

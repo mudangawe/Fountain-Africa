@@ -90,17 +90,22 @@
   height: 100%;
   width: 100%;
 }
-
+.section_header:hover{
+  color: #68c2e8 !important;
+  cursor: pointer;
+}
 .category-set .card .card-body {
   width: 100%;
   height: 100%;
 }
 
+.category-set .card .card-body a h5,
 .category-set .card .card-body h5,
 .category-set .card .card-body hr,
 .category-set .card .card-body p {
   position: relative;
   top: 40%;
+  cursor: pointer;
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
@@ -206,6 +211,7 @@
     height: 65vh;
   }
   /* Banner section end */
+  /*Section 
 
   /* Explore Section */
   .category-set{
@@ -242,4 +248,5 @@
     flex-flow: column;
   }
   /* Explore section end */
+
 }
