@@ -11,6 +11,8 @@ import {WelcomeComponent } from './welcome/welcome.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { DialogComponent } from './classes/dialog/dialog.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SubjectsComponent } from './classes/subjects/subjects.component';
+import { PractiseComponent } from './classes/practise/practise.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SignupComponent,
     ClassesComponent,
     WelcomeComponent,
-    DialogComponent
+    DialogComponent,
+    SubjectsComponent,
+    PractiseComponent
   ],
  
   imports: [

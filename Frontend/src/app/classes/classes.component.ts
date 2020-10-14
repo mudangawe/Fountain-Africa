@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from '../services/data.service';
-import {NgbActiveModal,NgbModal} from '@ng-bootstrap/ng-bootstrap';
-import {DialogComponent} from './dialog/dialog.component'
+
+import {Subscription} from 'rxjs';
 @Component({
   selector: 'app-classes',
   templateUrl: './classes.component.html',
@@ -10,35 +10,38 @@ import {DialogComponent} from './dialog/dialog.component'
 export class ClassesComponent implements OnInit {
 
   chapter = [1,2,3,4,5,6]
-  
+  subscription: Subscription;
   config: any;
-  collection = [];
-  constructor( private data: DataService, private modalService:NgbModal, private activeModal: NgbActiveModal) {
-    this.collection = this.data.getSubject();
-    console.log(this.collection)
+  subjectSelected = [];
+  constructor( private data: DataService) {
+    this.subscription = this.data.getSelectedSubject().subscribe(data => this.subjectSelected = data.selectedSubject);
+    if(typeof this.subjectSelected == 'undefined')
+    {
+       this.subjectSelected = []
+    }
     this.config = {
       itemsPerPage: 3,
       currentPage: 1,
-      totalItems: this.collection.length
+      totalItems: this.subjectSelected.length
     }
    }
 
   ngOnInit(): void {
    
   }
-  openDialog(){
-    this.modalService.open(DialogComponent,{size:'lg'})
-  }
-  pageChanged(event){
-    this.config.currentPage = event;
-  }
-  tab: any = "tab"
-  
+ 
+  tab: any = "tab";
+  subject:boolean = true;
+  practise:boolean;
   onClick(index)
   {
       if(index==0){
         this.tab = 'subject';
+        this.subject = true;
+        this.practise = false;
       }else if(index==1){
+        this.subject = false;
+        this.practise = true;
         this.tab = 'practise';}
       else if(index==2){
         this.tab ="profile";

@@ -1,0 +1,27 @@
+<div id="Content_heading">
+    <h5>Content</h5> 
+    <button class="btn btn-primary" style="height: 2.2rem;" (click)="openDialog()"> Edit Subjects</button>
+</div>
+<div id="classes_content_body">
+    <div class="subject" *ngFor="let subject of subjectSelected | paginate:config ; last as last;">
+        <div class="subject_header">
+            <h6>{{subject.name}}</h6>
+        </div>
+        <hr>
+        <div class="subject_body" *ngFor="let chapter of subject.chapter | slice:0:4; index as i">
+            <ul>
+                <li>{{chapter.name}}   <button *ngIf="i==0"  class="btn btn-primary"> Start</button></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="add_subject" style="background-color: #D3D3D3;" >
+        <div class="add_subject_body">
+            <a (click)="openDialog()"> <i class="fa fa-plus-circle  fa-3x" aria-hidden="true"></i> </a>
+            <br>
+            <span>Add new subject</span>
+        </div>
+    </div> 
+</div>
+<div style="text-align:center" id="pagination"> 
+    <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+</div>
