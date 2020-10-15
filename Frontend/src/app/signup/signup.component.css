@@ -2,7 +2,7 @@
 .signup-wrap {
     display: flex;
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     /* margin-top: 10vh; */
 }
 
@@ -82,17 +82,46 @@
     height: 100%;
     background-color: #403f4c;
 }
+
+.submit-block input:hover {
+  background-color: #6c67a7;
+}
+
+.submit-block input:active {
+  font-size: 0.75rem;
+}
+
+#form .link {
+  margin-top: 20px;
+  display: none;
+}
+
+#form .link p,
+#form .link a {
+  color: grey;
+}
+
+#form .link a:hover {
+  color: white;
+}
 /* Signup Forn section end */
 
 /* Login Link section */
+#login-link {
+  background-image: url('../../assets/images/banner/banner1-min.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 #login-link .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(51, 51, 51, 0.4);
+    background-color: rgba(51, 51, 51, 0.5);
 }
 
 #login-link .link {
-    padding-top: 50px;
+    padding: 50px 0 0 20px;
 }
 .link p {
     color: #fff;
@@ -101,17 +130,11 @@
 .link a {
     color: white;
     font-weight: 600;
-    border: 2px solid rgba(49, 133, 252, 0.8);
+    border: 2px solid #6c67a7;
 }
-/* Login Link section end */
 
-
-/* Login link section */
-#login-link {
-    background-image: url('../../assets/images/banner/banner1-min.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.link a:hover {
+  background-color: #6c67a7;
 }
 /* Login Link section end */
 
@@ -124,11 +147,15 @@
     /* Signup Form section */
     #signup-form {
         width: 100%;
-    } 
+    }
 
     #signup-form .header-form-wrap {
         width: 80%;
         margin: 0 auto;
+    }
+
+    #form .link {
+      display: block;
     }
     /* Signup Form section end */
 
@@ -141,7 +168,7 @@
 
 @media screen and (max-width: 48rem) {/* Small viewport */
     .signup-wrap {
-        height: 80vh;
+        height: fit-content;
     }
 
     /* Signup Form section */
