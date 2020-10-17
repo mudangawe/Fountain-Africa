@@ -8,13 +8,13 @@
 #bottom-nav {
     flex: 1.5;
     height: 100%;
-    background-color:  #403f4c;
+    background-color:  #292b2c;
 }
 
 #call-to-action {
     flex: 1;
     height: 100%;
-    background-color: #6c67a7;
+    background-color: #4e4f50;
 }
 
 @media screen and (max-width: 62rem) {/* Medium View Port */
