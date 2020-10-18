@@ -177,9 +177,22 @@
       padding-top: 20px;
       border-left: none;
     }
+
+    .contact-details {
+      display: flex;
+    }
+
+    .contact-details .detail {
+      flex: 1;
+    }
     /* Bottom Navigation section end */
 }
 
 @media screen and (max-width: 48rem) {/* Small View Port */
-
+  /* Bottom Navigation section */
+  .contact-details {
+    display: flex;
+    flex-flow: column;
+  }
+  /* Bottom Navigation section end */
 }
