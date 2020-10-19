@@ -1,0 +1,113 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 104, 252);
+}
+
+.form-wrapper {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px #f3dada;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo {
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    color: #111111;
+    font-family: open sans, sans serif;
+    font-weight: normal;
+}
+
+label {
+    font-size: 1.0em;
+    margin-bottom: 0.25em;
+    color: black;
+    font-weight: normal;
+}
+input {
+    padding: 6px 6px;
+    border-radius: 5px;
+    outline: none;
+    border: 0.7px solid #f3f3da;
+    width: 100%;
+    background-color: #f3dadac7;
+}
+
+input::placeholder {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #111111;
+}
+
+input.error {
+    border: 1px solid #d30c0c;
+}
+
+.errorMessage {
+    color: #d30c0c;
+    font-size: 0.80em;
+    display: relative;
+}
+
+.emailAddress {
+    margin: 1%;
+}
+
+.password {
+    margin: 1%
+}
+
+.emailAddress,
+.password {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.emailAddress,
+.password {
+    width: 100%;
+}
+
+.checkbox {
+    width: 50%;
+    color: black;
+}
+
+.signIn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.SignIn button {
+    background-color: #5d519e;
+    color: #fff;
+    border: 0.7px solid #ebdaf3;
+    width: 100%;
+    margin-top: 1em;
+    padding: 6px 6px;
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 0.25em;
+  }
