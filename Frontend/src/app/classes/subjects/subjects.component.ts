@@ -7,8 +7,10 @@ import {DialogComponent} from '../dialog/dialog.component';
   styleUrls: ['./subjects.component.css']
 })
 export class SubjectsComponent implements OnInit {
+  
   config: any;
   @Input() subjectSelected: any[];
+  
   constructor( private modalService:NgbModal ) {
     if(typeof this.subjectSelected == 'undefined')
     {
@@ -20,8 +22,10 @@ export class SubjectsComponent implements OnInit {
       totalItems: this.subjectSelected.length
     }
   }
+
   openDialog(){
-    this.modalService.open(DialogComponent,{size:'lg'})
+    const popupReference = this.modalService.open(DialogComponent,{size:'lg'})
+    popupReference.componentInstance.subject = true;
   }
   
   pageChanged(event){

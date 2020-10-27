@@ -1,6 +1,6 @@
 <div id="Content_heading">
     <h5>Content</h5> 
-    <button class="btn btn-primary" style="height: 2.2rem;" (click)="openDialog()"> Edit Subjects</button>
+    <button class="btn btn-primary" style="height: fit-content;" (click)="openDialog()"> Edit Subjects</button>
 </div>
 <div id="classes_content_body">
     <div class="subject" *ngFor="let subject of subjectSelected | paginate:config ; last as last;">
@@ -10,7 +10,7 @@
         <hr>
         <div class="subject_body" *ngFor="let chapter of subject.chapter | slice:0:4; index as i">
             <ul>
-                <li>{{chapter.name}}   <button *ngIf="i==0"  class="btn btn-primary"> Start</button></li>
+                <li>{{chapter.name}}   <button *ngIf="i==0"  class="btn btn-primary" routerLink="/class"> Start</button></li>
             </ul>
         </div>
     </div> 

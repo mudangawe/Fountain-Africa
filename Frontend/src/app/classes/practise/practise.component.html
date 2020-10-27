@@ -1,6 +1,26 @@
 <div id="Content_heading">
     <h5>Past exam papers</h5> 
 </div>
-<div class="exam">
-    Ndivhuwo
+<div class="exam" *ngFor="let file of subjectFile | paginate:config;">
+    <div class="image_section">
+        <div class="image">
+        </div>
+        <div class="details">
+            <h6>Maths paper two</h6><br>
+            <span>2016 Final exam</span>
+        </div>
+    </div>
+    <div class="tips_section">
+        <ul>
+            <li>Practise your knowledge</li>
+            <li>Organized for every chapter</li>
+            <li>You 3 hours to finish it</li>
+        </ul>
+    </div>
+    <div class="button">
+        <button class="btn btn-primary" (click)="downloadPdf()"> Download</button>
+    </div>
+</div>
+<div style="text-align:center"> 
+    <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
 </div>

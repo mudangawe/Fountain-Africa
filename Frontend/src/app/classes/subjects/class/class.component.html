@@ -1,0 +1,37 @@
+<div id="class_heading">
+    <span>Grade 12 </span>
+    <h6>Mathematics paper 2 2016 </h6>
+</div>
+<div class="subject" *ngFor="let chapter of subjectFile">
+    <div class="subject_heading">
+        <h6>Chapter One</h6>
+        <br>
+    </div>
+    <div class="subject_content">
+        <div class="learn_content" >
+            <span>Learn </span>
+            <ul>
+                <li >
+                    <i style="margin-top: 0.5rem;" class="fa fa-play-circle fa-2x " aria-hidden="true"></i>
+                    <a style="margin-left: 0.3rem;" (click)="openDialog()">Converting a fraction to a repeating decimal</a>
+                </li>
+                <li>
+                    <i class="fa fa-play-circle fa-2x"></i> 
+                    <a style="margin-left: 0.3rem;">Converting a fraction to a repeating decimal</a>
+                </li>
+                <li>
+                    <i class="fa fa-play-circle fa-2x"></i> 
+                    <a style="margin-left: 0.3rem;">Converting a fraction to a repeating decimal</a>
+                </li>
+            </ul>
+        </div>
+        <div >
+            <span>Mini Practise</span>
+            <div class="practise">
+                <h6>Solve for x</h6>
+                <span>70 percent pass rate</span><br>
+                <button class="btn btn-primary" (click)="openDialogQuestion()"> Start</button>
+            </div>
+        </div>
+    </div>
+</div>

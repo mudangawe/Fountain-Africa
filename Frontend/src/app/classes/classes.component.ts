@@ -8,8 +8,6 @@ import {Subscription} from 'rxjs';
   styleUrls: ['./classes.component.css']
 })
 export class ClassesComponent implements OnInit {
-
-  chapter = [1,2,3,4,5,6]
   subscription: Subscription;
   config: any;
   subjectSelected = [];

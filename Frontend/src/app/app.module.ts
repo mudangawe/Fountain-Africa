@@ -13,7 +13,10 @@ import { DialogComponent } from './classes/dialog/dialog.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SubjectsComponent } from './classes/subjects/subjects.component';
 import { PractiseComponent } from './classes/practise/practise.component';
-
+import { ClassComponent } from './classes/subjects/class/class.component';
+import { VideoComponent } from './classes/dialog/video/video.component';
+import { QuestionsComponent } from './classes/dialog/questions/questions.component';
+import {SubjectComponent} from './classes/dialog/subject/subject.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,11 @@ import { PractiseComponent } from './classes/practise/practise.component';
     WelcomeComponent,
     DialogComponent,
     SubjectsComponent,
-    PractiseComponent
+    PractiseComponent,
+    ClassComponent,
+    VideoComponent,
+    QuestionsComponent,
+    SubjectComponent
   ],
  
   imports: [
