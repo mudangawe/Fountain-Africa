@@ -1,0 +1,12 @@
+
+<div class="input-group mb-2 search">
+    <input type="text" class="form-control" placeholder="Search for.."  >
+</div>
+<div  class="btn-group" role="group" aria-label="Basic example" id="button">
+    <div class="btn-group mr-2" role="group" aria-label="Second group">
+        <button  type="button" [ngClass]="{'active':tab ==='all'}" class="btn btn-light" (click)="onChange(0)">All</button>
+        <button type="button" [ngClass]="{'active':tab === 'books'}" class="btn btn-light" (click)="onChange(1)">Books</button>
+        <button type="button" [ngClass]="{'active':tab === 'talks'}" class="btn btn-light" (click)="onChange(2)">Talks</button>
+    </div>
+</div>
+<hr>
