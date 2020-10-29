@@ -1,103 +1,15 @@
 <!-- Banner section -->
-<section id="banner" class="">
-    <div class="carousel">
-        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="call-to-action">
-          <span><a class="btn" href="#">Start Learning</a></span>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="banner-image one d-block w-100">
-                <div class="layover">
-
-                </div>
-              </div>
-              <!-- <img class="banner-image d-block w-100" src="../../assets/images/banner/banner1-min.webp" alt="First slide"> -->
-            </div>
-            <div class="carousel-item">
-              <div class="banner-image two d-block w-100">
-                <div class="layover">
-
-                </div>
-              </div>
-              <!-- <img class="banner-image d-block w-100" src="../../assets/images/banner/banner1-min.webp" alt="Second slide"> -->
-          </div>
-            <div class="carousel-item">
-              <div class="banner-image three d-block w-100">
-                <div class="layover">
-
-                </div>
-              </div>
-              <!-- <img class="banner-image d-block w-100" src="../../assets/images/banner/banner3-min.webp" alt="Third slide"> -->
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        </div>
-    </div>
-<section>
-
-  <!-- Explore section -->
-<section id="explore">
-    <div class="categories">
-        <div class="category-set">
-          <article class="card narrow one" style="width: 100%;">
-            <div class="card-bg">
-              <div class="card-body">
-                <h5 class="">Classes</h5>
-                <hr>
-                <p class="">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="card wide two" style="width: 100%;">
-            <div class="card-bg">
-              <div class="card-body">
-                <h5 class="">Books</h5>
-                <hr>
-                <p class="">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="category-set">
-          <article class="card wide three" style="width: 100%;">
-            <div class="card-bg">
-              <div class="card-body">
-                <h5 class="">Blog</h5>
-                <hr>
-                <p class="">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="card narrow four" style="width: 100%;">
-            <div class="card-bg">
-              <div class="card-body">
-                <h5 class="">Challenges</h5>
-                <hr>
-                <p class="">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </article>
-        </div>
+<div class="banner">
+      <div class="container">
+        <img src="../../assets/images/logos/google-removebg-preview.png" height=""><br>
+        <button class="call-to-action">Join us now</button><br>
+        <h2> We are here to assist</h2>
+        <p>Get unlimited access to learning material for free and career guidance</p>
       </div>
-</section>
+</div>
 
 <!-- Why Us section -->
+
 <section id="why-us">
   <div class="why-us-content">
     <div class="content-heading">
@@ -113,4 +25,18 @@
       </p>
     </div>
   </div>
-</section>
+  </section>
+  <section id="team" class="container">
+      <div class="team-heading">
+        <h2>Our Team</h2>
+      </div>
+      <div class="cards"> 
+          <div class="card mb-3" *ngFor="let member of team">
+              <img src="../../assets/images/banner/banner3-min.webp" class="card-img-top" alt="image top">
+              <div class="card-body">
+                  <h5>{{member.fullName}} </h5>
+                  <span>{{member.role}} </span>
+              </div>
+          </div>
+      </div>
+  </section>

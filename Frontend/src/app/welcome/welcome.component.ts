@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent implements OnInit {
-
+  team: any[] = [{fullName:"Ndivhuwo Gift Ramashia", role:'Team Leader'},
+                 {fullName:"Mr Mathew", role:'Developer'},
+                 {fullName:"Mr Junior", role:'Developer'},
+                 {fullName:"Miss Tsakane", role:'Developer'}]
   constructor() { }
 
   ngOnInit(): void {
