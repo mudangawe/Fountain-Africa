@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
   tab: any;
   constructor() { }
-
+  @Output() toggleSidebar = new EventEmitter<boolean>();
   ngOnInit(): void {
   }
 
@@ -16,4 +16,10 @@ export class NavComponent implements OnInit {
   {
     
   }
+  sidebar()
+  {
+    this.toggleSidebar.emit(true);
+    console.log(false)
+  }
+  
 }

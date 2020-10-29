@@ -1,9 +1,10 @@
 
 <nav id="nav" class="navbar  navbar-light navbar-expand-md bg-light " >
   <a class="navbar-brand" [routerLink]="['/welcome']" routerLinkActive="router-link-active" href="#"><img src="../../assets/images/logos/logo-transparent.png" alt=""></a>
-  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button  (click)="sidebar()" class="navbar-toggler " type="button" data-toggle="collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto ">

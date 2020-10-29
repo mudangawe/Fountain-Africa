@@ -1,17 +1,47 @@
 <!-- Header -->
 <header>
   <!-- App Navigation -->
-  <app-nav></app-nav>
+  <ng-sidebar-container>
+ 
+    <!-- A sidebar -->
+    <ng-sidebar [(opened)]="_opened">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link" >Classes</a>
+        </li>
+        <li class=" nav-item">
+          <a class="nav-link" >Library</a>
+        </li>
+        <li class=" nav-item">
+          <a class="nav-link" >About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn" [routerLink]="['/signup']" routerLinkActive="router-link-active" >Join us</a>
+        </li>
+      </ul>
+    </ng-sidebar>
+
+    <!-- Page content -->
+    <div ng-sidebar-content>
+        <app-nav (toggleSidebar)="_toggleSidebar($event)"></app-nav>
+        <!-- Main -->
+        <main>
+          <!-- App Routing -->
+          <router-outlet></router-outlet>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+          <!-- App Footer -->
+        <!-- <app-footer></app-footer> -->
+        </footer>
+    </div>
+
+  </ng-sidebar-container>
+  
 </header>
 
-<!-- Main -->
-<main>
-  <!-- App Routing -->
-  <router-outlet></router-outlet>
-</main>
 
-<!-- Footer -->
-<footer>
-  <!-- App Footer -->
- <!-- <app-footer></app-footer> -->
-</footer>

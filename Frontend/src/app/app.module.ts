@@ -7,7 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {WelcomeComponent} from './welcome/welcome.component'
-
+import {SidebarModule} from 'ng-sidebar'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,8 @@ import {WelcomeComponent} from './welcome/welcome.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    SidebarModule.forRoot()
   ],
   providers: [
     Title

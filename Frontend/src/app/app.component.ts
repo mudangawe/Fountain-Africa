@@ -9,7 +9,14 @@ import { Title } from '@angular/platform-browser';
 export class AppComponent {
   title = 'Fountain Africa';
 
-    constructor(private titleService: Title) {
+  constructor(private titleService: Title) {
       titleService.setTitle(this.title);
+   }
+   _opened: boolean = false;
+ 
+  _toggleSidebar(sidebar) {
+    this._opened = !this._opened;
+    console.log(sidebar);
   }
+ 
 }

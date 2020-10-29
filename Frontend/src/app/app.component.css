@@ -1,0 +1,10 @@
+ng-sidebar-container{
+    height: fit-content;
+    display: absolute;
+    z-index: 1;
+}
+::ng-deep .ng-sidebar{
+    background-color: aliceblue;
+    width: 300px;
+    padding: 2em; 
+}

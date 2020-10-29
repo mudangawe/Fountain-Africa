@@ -4,7 +4,6 @@
     top: 0; */
     width: 100%;
     height: fit-content;
-    z-index: 2;
 }
 
 #nav .navbar-brand img {
@@ -20,6 +19,16 @@
 .nav-item a:hover{
     cursor: pointer;
     color: rgba(238, 83, 98, 0.6);
+}
+ng-sidebar-container{
+    height: 100vh;
+    display: absolute;
+    z-index: 1;
+}
+::ng-deep .ng-sidebar{
+    background-color: aliceblue;
+    width: 300px;
+    padding: 2em; 
 }
 @media screen and (max-width: 48rem) { /* Medium Viewport */
     #nav .navbar-nav .log a {
