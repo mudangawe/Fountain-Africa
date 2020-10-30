@@ -1,0 +1,33 @@
+#class_heading{
+    height: fit-content;
+    padding: 1%;
+    background-color: aqua;
+}
+.subject{
+    height: fit-content;
+    padding: 1%;
+    background-color:#BFB0B8;
+    margin: 1% 2% 0 2%;
+
+}
+.subject_content{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.learn_content ul{
+    list-style: none;
+}
+.learn_content ul li{
+    height: fit-content;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+}
+.learn_content ul li i{
+    margin-top: 0.2rem;
+}
+.practise{
+    height: fit-content;
+    width: 80%;
+    background-color: white;
+    padding: 2%;
+}

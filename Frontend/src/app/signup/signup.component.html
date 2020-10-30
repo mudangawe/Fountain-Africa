@@ -10,32 +10,35 @@
                 <div class="input-block-set">
                     <div class="input-block">
                         <label for="name">Full Name(s)<sup>*</sup></label>
-                        <input type="text" name="name" id="name" required>
+                        <input type="text" name="name" id="name" [(ngModel)]="user.name" required>
                     </div>
                     <div class="input-block">
                         <label for="surname">Surname<sup>*</sup></label>
-                        <input type="text" name="surname" id="surname" required>
+                        <input type="text" name="surname" id="surname" [(ngModel)]="user.surname" required>
                     </div>
                 </div>
-    
+
                 <div class="input-block-set">
                     <div class="input-block">
                         <label for="email">Email Address<sup>*</sup></label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" [(ngModel)]="user.email" required>
                     </div>
                     <div class="input-block">
                         <label for="number">Mobile Number(optional)</label>
-                        <input type="tel" name="number" id="number">
+                        <input type="tel" name="number" id="number" [(ngModel)]="user.phone">
                     </div>
                 </div>
-    
+
                 <div class="input-block">
                     <label for="password">Password<sup>*</sup></label>
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" name="password" id="password" [(ngModel)]="user.password" required>
                 </div>
                 <div class="submit-block">
-                    <input type="submit" value="Sign Up" class="btn">
-                </div>            
+                    <input type="submit" value="Sign Up" class="btn" (click)="submitForm()">
+                </div>
+                <div class="link">
+                  <p>Already a member? <a class="btn" [routerLink]="['/login']" routerLinkActive="router-link-active" >Login</a></p>
+                </div>
             </form>
         </div>
     </section>
@@ -44,7 +47,7 @@
     <section id="login-link">
         <div class="overlay">
             <div class="link">
-                <p>Already a member? <a class="btn" href="">Login</a></p>
+                <p>Already a member? <a class="btn" [routerLink]="['/login']" routerLinkActive="router-link-active" >Login</a></p>
             </div>
         </div>
     </section>

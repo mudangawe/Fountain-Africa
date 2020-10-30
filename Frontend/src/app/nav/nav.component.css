@@ -5,7 +5,7 @@
     width: 100%;
     height: 10vh;
     z-index: 2;
-    background-color: #403f4c;
+    background-color: #292b2c;
 }
 
 #nav .navbar-brand img {
@@ -24,13 +24,15 @@
 
 #nav .navbar-nav a {
     color: #fff;
-    background-color:  #403f4c;
-    padding: 8px 5px;
+    min-width: 100px;
+    text-align: center;
+    background-color:  #292b2c;
+    padding: 8px 0;
 }
 
 #nav .navbar-nav a:hover {
     color: #fff;
-    background-color: #6c67a7;
+    background-color: #4e4f50;
     border-radius: 5px;
 }
 
@@ -41,11 +43,11 @@
 }
 
 #nav .navbar-nav .log a:hover {
-    border: 1px solid #403f4c;
+    border: 1px solid #292b2c;
 }
 
 #nav .dropdown-menu {
-    background-color:  #403f4c;
+    background-color:  #292b2c;
     border-radius: unset;
 }
 
@@ -55,7 +57,7 @@
 
 @media screen and (max-width: 48rem) { /* Medium Viewport */
     #nav .navbar-nav .log a {
-        border: 1px solid #403f4c;
+        border: 1px solid #292b2c;
         border-radius: unset;
     }
 }

@@ -1,0 +1,32 @@
+/* Dashboard Books */
+/* User Books section */
+.card {
+  margin: 20px;
+}
+
+.card img {
+  height: 300px;
+  margin-top: 10px;
+}
+/* User Books section end */
+
+@media screen and (max-width: 62rem) {/* Medium Viewport */
+  /* User Books section */
+  .card img {
+    height: 200px;
+  }
+  /* User Books section end */
+}
+
+@media screen and (max-width: 48rem) {/* Small Viewport */
+  /* User Books section */
+  .card {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .card img {
+    height: 150px;
+  }
+  /* User Books section end */
+}

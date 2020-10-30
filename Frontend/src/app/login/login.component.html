@@ -1,0 +1,40 @@
+<div class="login-wrap">
+  <!-- Login Form section -->
+  <section id="login-form">
+      <div class="header-form-wrap">
+          <header id="header">
+              <h1>Welcome back</h1>
+              <p>Join a great platform for managing your education</p>
+          </header>
+          <form id="form" action="post">
+              <div class="input-block">
+                  <label for="email">Email Address or Username</label>
+                  <input type="email" name="email" id="email" required>
+              </div>
+
+              <div class="input-block">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" required>
+              </div>
+
+              <div class="submit-block">
+                  <input type="submit" value="Log In" class="btn" [routerLink]="['/dashboard']">
+              </div>
+
+              <div class="link">
+                <p>Not yet a member? <a class="btn" [routerLink]="['/signup']" routerLinkActive="router-link-active" >Sign Up</a></p>
+              </div>
+          </form>
+      </div>
+  </section>
+
+  <!-- Login Link section -->
+  <section id="login-link">
+      <div class="overlay">
+          <div class="link">
+              <p>Not yet a member? <a class="btn" [routerLink]="['/signup']" routerLinkActive="router-link-active" >Sign Up</a></p>
+          </div>
+      </div>
+  </section>
+</div>
+

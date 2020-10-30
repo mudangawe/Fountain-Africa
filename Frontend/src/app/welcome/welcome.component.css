@@ -19,11 +19,11 @@
   font-weight: 500px;
   width: 100%;
   height: 100%;
-  background-color: rgba(238, 83, 98, 0.6);
+  background-color: rgba(49, 133, 252, 0.6);
 }
 
 #banner .call-to-action a:hover {
-  background-color: rgba(238, 83, 98, 0.8);
+  background-color: rgb(49, 133, 252,0.8);
 }
 
 #banner .banner-image {
@@ -37,7 +37,7 @@
 }
 
 #banner .carousel-item .one {
-  background-image: url('../../assets/images/banner/banner1-min.webp');
+  background-image: url('../../assets/images/banner/banner4.jpg');
 }
 
 #banner .carousel-item .two {
@@ -56,8 +56,8 @@
 
 #banner a .carousel-control-prev-icon,
 #banner a .carousel-control-next-icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 /* Banner section end */
 
@@ -124,7 +124,7 @@
 }
 
 .category-set .one .card-bg {
-  background-image: url('../../assets/images/explore/class.jpg');
+  background-image: url('../../assets/images/explore/classes.jpg');
 }
 
 .category-set .two .card-bg {
@@ -174,7 +174,7 @@
 
 .content-heading h2 {
   font-size: 2.5rem;
-  color: #68c2e8;
+  color: #4e4f50;
   text-align: center;
   font-weight: 500;
 }

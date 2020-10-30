@@ -1,0 +1,19 @@
+<!-- Dashboard Profile -->
+<app-dashboard-profile></app-dashboard-profile>
+
+<!-- Dashboard Display Panel -->
+<div class="display-wrap">
+  <aside>
+    <nav>
+      <ul>
+        <li><a class="btn" [routerLink]="['/dash-overview']" >Overview</a></li>
+        <li><a class="btn" [routerLink]="['/dash-courses']" >Courses</a></li>
+        <li><a class="btn" [routerLink]="['/dash-books']">Books</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <section class="container">
+    <router-outlet></router-outlet>
+  </section>
+</div>
