@@ -11,7 +11,6 @@
 /* User Courses section end */
 
 
-
 @media screen and (max-width: 62rem){/* Medium View Port */
   /* User Courses section */
   .card img {
@@ -21,7 +20,7 @@
   /* User Courses section  end */
 }
 
-@media screen and (max-width: 62rem){/* Small View Port */
+@media screen and (max-width: 48rem){/* Small View Port */
   /* User Courses section */
   .card img {
     height: 150px;

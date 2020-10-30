@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
 
 import { DashboardProfileComponent } from './dashboard-profile/dashboard-profile.component';
 import { DashboardSidebarComponent } from './dashboard-sidebar/dashboard-sidebar.component';
@@ -33,7 +34,8 @@ const ROUTES = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(ROUTES)
+    RouterModule.forChild(ROUTES),
+    ChartModule
   ]
 })
 export class DashboardModule { }
