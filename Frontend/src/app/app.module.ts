@@ -23,6 +23,7 @@ import { VideoComponent } from './classes/dialog/video/video.component';
 import { QuestionsComponent } from './classes/dialog/questions/questions.component';
 import { SubjectComponent } from './classes/dialog/subject/subject.component'
 import { LibraryComponent } from './library/library.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { LibraryComponent } from './library/library.component';
     VideoComponent,
     QuestionsComponent,
     SubjectComponent,
-    LibraryComponent
+    LibraryComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
