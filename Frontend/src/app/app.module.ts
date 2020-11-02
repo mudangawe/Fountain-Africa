@@ -9,11 +9,9 @@ import { SignupComponent } from './signup/signup.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 import {FormsModule} from '@angular/forms';
 import {LibraryComponent} from './library/library.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import{DragScrollModule} from 'ngx-drag-scroll'
 import {ClassesComponent} from './classes/classes.component'
 import {WelcomeComponent } from './welcome/welcome.component';
-import {NgxPaginationModule} from 'ngx-pagination';
 import { DialogComponent } from './classes/dialog/dialog.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SubjectsComponent } from './classes/subjects/subjects.component';
@@ -35,7 +33,7 @@ import {SubjectComponent} from './classes/dialog/subject/subject.component'
   ],
   exports:[
     WelcomeComponent,
-    LibraryComponent
+    LibraryComponent,
     ClassesComponent,
     DialogComponent,
     SubjectsComponent,
@@ -52,7 +50,7 @@ import {SubjectComponent} from './classes/dialog/subject/subject.component'
     NgxPaginationModule,
     FormsModule,
     NgbModule,
-    DragScrollModule
+    DragScrollModule,
     NgbModule
   ],
   providers: [
