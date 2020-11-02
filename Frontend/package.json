@@ -39,6 +39,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "ng-sidebar": "^9.4.2",
+    "popper.js": "^1.16.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
