@@ -17,7 +17,7 @@ import {SidebarModule} from 'ng-sidebar'
     WelcomeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     NgbModule,
     SidebarModule.forRoot()
