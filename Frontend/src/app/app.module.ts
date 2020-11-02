@@ -29,7 +29,15 @@ import {SubjectComponent} from './classes/dialog/subject/subject.component'
     FooterComponent,
     SignupComponent,
     WelcomeComponent,
-    LibraryComponent
+    LibraryComponent,
+    ClassesComponent,
+    DialogComponent,
+    SubjectsComponent,
+    PractiseComponent,
+    ClassComponent,
+    VideoComponent,
+    QuestionsComponent,
+    SubjectComponent
   ],
   exports:[
     WelcomeComponent,
@@ -40,8 +48,7 @@ import {SubjectComponent} from './classes/dialog/subject/subject.component'
     PractiseComponent,
     ClassComponent,
     VideoComponent,
-    QuestionsComponent,
-    SubjectComponent
+    QuestionsComponent
   ],
   imports: [
     AppRoutingModule,
