@@ -1,0 +1,5 @@
+<div id="dialog">
+    <app-video *ngIf="video"></app-video>
+    <app-subject *ngIf="subject" (closeDialog)="closeDialog($event)"></app-subject>
+    <app-questions *ngIf="question" (closedialog)="closeDialog($event)" ></app-questions>
+</div>

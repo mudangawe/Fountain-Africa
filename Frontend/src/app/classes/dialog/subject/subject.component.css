@@ -1,0 +1,14 @@
+.dialog_heading{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.modal-body{
+    overflow-y: scroll;
+    height:350px;
+}
+.grade_body{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1.2rem;
+}
