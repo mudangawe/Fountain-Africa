@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class AppComponent {
   title = 'Fountain Africa';
-
+  tab = "home"
   constructor(private titleService: Title) {
       titleService.setTitle(this.title);
    }
@@ -16,7 +16,20 @@ export class AppComponent {
  
   _toggleSidebar(sidebar) {
     this._opened = !this._opened;
-    console.log(sidebar);
   }
- 
+  onClick(index)
+  {
+      if(index==0){
+        this.tab = 'home';
+      }else if(index==1){
+        this.tab = 'classes';}
+      else if(index==2){
+        this.tab ="library";
+      } else if(index==3){
+         this.tab = "about"
+      } else if(index==4)
+      {
+        this.tab = "login"
+      }
+    }
 }

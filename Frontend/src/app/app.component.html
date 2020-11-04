@@ -1,46 +1,53 @@
 <!-- Header -->
 <header>
   <!-- App Navigation -->
-  <ng-sidebar-container>
  
-    <!-- A sidebar -->
-    <ng-sidebar [(opened)]="_opened">
-      <ul class="navbar-nav ml-auto ">
-        <li class="nav-item">
-          <a class="nav-link" >Classes</a>
-        </li>
-        <li class=" nav-item">
-          <a class="nav-link" >Library</a>
-        </li>
-        <li class=" nav-item">
-          <a class="nav-link" >About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" >Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn" [routerLink]="['/signup']" routerLinkActive="router-link-active" >Join us</a>
-        </li>
-      </ul>
-    </ng-sidebar>
+ 
+      
+        <ng-sidebar-container style="position:static;">
+ 
+          <!-- A sidebar -->
+          <ng-sidebar [(opened)]="_opened">
+            <ul class="sidebarul">
+              <li id="menu">
+                 <h4> Menu </h4> 
+              </li>
+              <li class="item" [ngClass]="{'activeLink':tab=='home'}"  (click)="onClick(0)">
+                Home 
+              </li>
+              <li class="item" [ngClass]="{'activeLink':tab=='classes'}"  (click)="onClick(1)">
+                Classes
+              </li>
+              <li class="item" [ngClass]="{'activeLink':tab=='library'}"  (click)="onClick(2)">
+               Library
+              </li>
+              <li class="item" [ngClass]="{'activeLink':tab=='about'}"  (click)="onClick(3)">
+                About
+              </li>
+              <li class="item" [ngClass]="{'activeLink':tab=='login'}"  (click)="onClick(4)">
+                Login
+              </li>
+            </ul>
+          </ng-sidebar>
+     
+          <!-- Page content -->
+          <div ng-sidebar-content>
+            <app-nav (toggleSidebar)="_toggleSidebar($event)"></app-nav>        
+                <!-- Main -->
+                <main>
+                  <!-- App Routing -->
+                  <router-outlet></router-outlet>
+                </main>
+                <!-- Footer -->
+                <footer>
+                  <!-- App Footer -->
+                <!-- <app-footer></app-footer> -->
+                </footer>
+          </div>
+     
+        </ng-sidebar-container>
 
-    <!-- Page content -->
-    <div ng-sidebar-content>
-       
-        <!-- Main -->
-        <main>
-          <!-- App Routing -->
-          <router-outlet></router-outlet>
-        </main>
-
-        <!-- Footer -->
-        <footer>
-          <!-- App Footer -->
-        <!-- <app-footer></app-footer> -->
-        </footer>
-    </div>
-
-  </ng-sidebar-container>
+  
   
 </header>
 

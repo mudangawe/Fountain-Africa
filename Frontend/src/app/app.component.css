@@ -4,7 +4,36 @@ ng-sidebar-container{
     z-index: 1;
 }
 ::ng-deep .ng-sidebar{
-    background-color: aliceblue;
+    background-color: #68c2e8;
     width: 300px;
     padding: 2em; 
+    opacity: 0.9;
+}
+.sidebarul{
+    list-style-type: none;
+}
+.item{
+    width: auto;
+    height: 3.5rem;
+    box-sizing: border-box;
+    border-style: ridge;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size:large;
+    font-weight: 400;
+}
+#menu{
+    background-color:black !important;
+    height: fit-content;
+    width: 100%;
+    opacity: 1;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.activeLink{
+    opacity: 1;
+    background-color: black;
+    color:white;
 }
