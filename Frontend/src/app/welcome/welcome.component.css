@@ -41,11 +41,11 @@
 }
 
 #banner .carousel-item .two {
-  background-image: url('../../assets/images/banner/banner2-min.webp');
+  background-image: url('../../assets/images/banner/banner5.jpg');
 }
 
 #banner .carousel-item .three {
-  background-image: url('../../assets/images/banner/banner3-min.webp');
+  background-image: url('../../assets/images/banner/banner6.jpg');
 }
 
 #banner .carousel-item .layover {
@@ -58,6 +58,19 @@
 #banner a .carousel-control-next-icon {
   width: 30px;
   height: 30px;
+}
+
+#banner .quote {
+  position: relative;
+  top: 20%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+#banner .quote p {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
 }
 /* Banner section end */
 

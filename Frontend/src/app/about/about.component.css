@@ -1,0 +1,131 @@
+/* About Page */
+
+/* Banner section */
+#banner {
+  min-height: 400px;
+  height: 40vh;
+}
+
+.banner-wrap {
+  height: 100%;
+  background-image: url('../../assets/images/explore/books.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 43, 44, 0.4);
+}
+
+.heading {
+  position: relative;
+  top: 40%;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.heading h1 {
+  color:#fff;
+}
+/* Banner section end */
+
+/* Information section */
+.mission { /* Mission article */
+  height: 300px;
+  background-color: rgb(41, 43, 44);
+}
+
+.mission .content {
+  width: 60%;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.mission h2,
+.mission p {
+  text-align: center;
+  color: #fff;
+}
+
+.about { /* About article */
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.about h2 {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about p {
+  text-align: justify;
+}
+
+.team { /* Team article */
+  width: 80%;
+  margin: 0 auto;
+}
+
+.team h2 {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.team-mate {
+  display: flex;
+  margin: 20px 0;
+}
+
+.team-mate .frame-image,
+.team-mate .name-bio {
+  flex: 1;
+}
+
+.frame-image {
+  display: flex;
+  height: 300px;
+}
+
+.frame-image .wide {
+  flex: 1.2;
+}
+
+.frame-image .narrow {
+  flex: 0.8;
+}
+
+.frame-image .frame {
+  background-color:#4e4f50;
+  width: 100%;
+  height: 100%;
+}
+
+.frame-image .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.name-bio {
+  padding: 20px;
+}
+/* Information section end */
+
+
+@media screen and (max-width: 62rem) { /* Medium Viewpor */
+  /* Information section */
+  .bio-right { /* Team mate with bio on the right */
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .bio-left { /* Team mate with bio on the left */
+    display: flex;
+    flex-flow: column;
+  }
+  /* Information section end  */
+}

@@ -1,4 +1,4 @@
-zzzimport { BrowserModule, Title } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule} from '@angular/router'
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +19,9 @@ import { PractiseComponent } from './classes/practise/practise.component';
 import { ClassComponent } from './classes/subjects/class/class.component';
 import { VideoComponent } from './classes/dialog/video/video.component';
 import { QuestionsComponent } from './classes/dialog/questions/questions.component';
-import {SubjectComponent} from './classes/dialog/subject/subject.component'
+import { SubjectComponent } from './classes/dialog/subject/subject.component'
+import { LibraryComponent } from './library/library.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -38,7 +40,8 @@ import {SubjectComponent} from './classes/dialog/subject/subject.component'
     VideoComponent,
     QuestionsComponent,
     SubjectComponent,
-    LibraryComponent
+    LibraryComponent,
+    AboutComponent
   ],
   imports: [
     AppRoutingModule,
