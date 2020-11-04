@@ -1,21 +1,19 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-
-import { DashboardModule } from './dashboard/dashboard.module';
-import { NgxPaginationModule } from 'ngx-pagination';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DragScrollModule } from 'ngx-drag-scroll';
-
+import {RouterModule} from '@angular/router'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
-import { LoginComponent } from './login/login.component';
-import { ClassesComponent } from './classes/classes.component'
-import { WelcomeComponent } from './welcome/welcome.component';
+import {NgxPaginationModule} from 'ngx-pagination';
+import {FormsModule} from '@angular/forms';
+import {LibraryComponent} from './library/library.component';
+import{DragScrollModule} from 'ngx-drag-scroll'
+import {ClassesComponent} from './classes/classes.component'
+import {WelcomeComponent } from './welcome/welcome.component';
 import { DialogComponent } from './classes/dialog/dialog.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SubjectsComponent } from './classes/subjects/subjects.component';
 import { PractiseComponent } from './classes/practise/practise.component';
 import { ClassComponent } from './classes/subjects/class/class.component';
@@ -25,15 +23,16 @@ import { SubjectComponent } from './classes/dialog/subject/subject.component'
 import { LibraryComponent } from './library/library.component';
 import { AboutComponent } from './about/about.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     FooterComponent,
     SignupComponent,
-    LoginComponent,
-    ClassesComponent,
     WelcomeComponent,
+    LibraryComponent,
+    ClassesComponent,
     DialogComponent,
     SubjectsComponent,
     PractiseComponent,
@@ -45,6 +44,7 @@ import { AboutComponent } from './about/about.component';
     AboutComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
