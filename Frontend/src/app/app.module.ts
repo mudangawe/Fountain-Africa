@@ -1,4 +1,4 @@
-import { BrowserModule, Title } from '@angular/platform-browser';
+zzzimport { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule} from '@angular/router'
 import { AppRoutingModule } from './app-routing.module';
@@ -37,28 +37,18 @@ import {SubjectComponent} from './classes/dialog/subject/subject.component'
     ClassComponent,
     VideoComponent,
     QuestionsComponent,
-    SubjectComponent
-  ],
-  exports:[
-    WelcomeComponent,
-    LibraryComponent,
-    ClassesComponent,
-    DialogComponent,
-    SubjectsComponent,
-    PractiseComponent,
-    ClassComponent,
-    VideoComponent,
-    QuestionsComponent
+    SubjectComponent,
+    LibraryComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
-    RouterModule,
-    NgxPaginationModule,
     FormsModule,
+    AppRoutingModule,
+    DashboardModule,
+    NgxPaginationModule,
     NgbModule,
-    DragScrollModule,
-    NgbModule
+    DragScrollModule
   ],
   providers: [
     Title

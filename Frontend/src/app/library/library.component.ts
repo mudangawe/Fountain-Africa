@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import {DragScrollComponent} from 'ngx-drag-scroll'
+import { DragScrollComponent } from 'ngx-drag-scroll';
+
 @Component({
   selector: 'app-library',
   templateUrl: './library.component.html',
@@ -20,11 +21,11 @@ export class LibraryComponent implements OnInit {
       {image: '../../assets/images/explore/books.jpg'},
       {image: '../../assets/images/explore/books.jpg'}
     ];
-  constructor() { 
+  constructor() {
   }
 
   ngOnInit(): void {
-  
+
   }
   onChange(index:Number)
   {
@@ -39,7 +40,7 @@ export class LibraryComponent implements OnInit {
     else if(index == 2)
     {
       this.tab = "talks";
-    } 
+    }
     else if(index==3)
     {
       this.tab = "blogs";
@@ -47,18 +48,18 @@ export class LibraryComponent implements OnInit {
   }
 
   @ViewChild('nav', {read: DragScrollComponent}) ds: DragScrollComponent;
-  
+
   moveLeft() {
     this.ds.moveLeft();
   }
- 
+
   moveRight() {
     this.ds.moveRight();
   }
- 
+
   moveTo(index) {
     this.ds.moveTo(index);
   }
- 
+
 
 }

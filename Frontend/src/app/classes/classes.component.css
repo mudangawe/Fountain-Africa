@@ -1,3 +1,8 @@
+#classes_box {
+  min-height: 90vh;
+  height: fit-content;
+}
+
 #classes_body{
     display:grid;
     grid-template-rows: 100px 100px;
@@ -9,7 +14,6 @@
     margin-top: 25%;
     height: 100%;
     max-height: fit-content;
-    
 }
 #classes_navigation ul{
     list-style-type: none;
@@ -57,7 +61,7 @@
 
 .subject_body ul li button{
     position:absolute;
-    right: 0;    
+    right: 0;
 }
 #classes_content{
     height: 600px;
