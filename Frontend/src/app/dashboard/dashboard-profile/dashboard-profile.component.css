@@ -1,0 +1,74 @@
+/* Dashboard Profile */
+#profile {
+  height: 200px;
+  background-image: url('../../../assets/images/bg/rainbow.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 43, 44, 0.5);
+}
+
+.profile-wrap .details {
+  flex: 1.5;
+  /* border: 1px solid blue; */
+}
+
+.profile-wrap .badges {
+  flex: 1;
+  /* border: 1px solid red; */
+}
+
+.details {
+  display: flex;
+}
+
+.details .image {
+  flex: 1;
+  /* border: 1px solid green; */
+}
+
+.details .username-bio {
+  flex: 1.6;
+  /* border: 1px solid yellow; */
+}
+
+/* Details */
+.details .image .icon {
+  background-color: white;
+  font-size: 3rem;
+  width: 100px;
+  height: 100px;
+  margin: 15px auto;
+  border-radius: 100%;
+}
+
+.details .image .icon p {
+  text-align: center;
+}
+
+.username-bio h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.username-bio p {
+  color: #fff;
+}
+/* Details end */
+
+
+@media screen and (max-width: 48rem) {
+  /* Details */
+  .profile-wrap {
+    display: flex;
+    flex-flow: column;
+  }
+  /* Details  end */
+}

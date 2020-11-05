@@ -1,0 +1,21 @@
+<div class="modal-header dialog_heading">
+    <h4 class="modal-title">Choose your Subject</h4>
+    <button type="button" class="btn btn-outline-dark" (click)="onClose()">Close</button>
+</div>
+<div class="modal-body">
+    <div class="grade" *ngFor="let grade of grades ">
+       <div class="grade_heading">
+          <h6>{{grade}}</h6>
+       </div>
+       <hr>
+       <div class="grade_body">
+          <div class="checkbox" *ngFor="let subject of subjects" 
+              (change)="onChange(subject, $event.target.checked)"  >
+            <label><input type="checkbox" value="" [checked]="subject.added" [(ngModel)]="subject.added"> {{subject.name}} </label>
+          </div> 
+      </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark btn-primary" (click)="onApply()">Apply</button>
+</div>

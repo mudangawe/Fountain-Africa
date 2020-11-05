@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {RouterModule } from '@angular/router'
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
@@ -13,6 +13,10 @@ export class WelcomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+  navigate()
+  {
+    alert(0)
   }
 
   private _opened: boolean = false;

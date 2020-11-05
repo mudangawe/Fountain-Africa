@@ -1,0 +1,30 @@
+/* Dashboard Courses */
+/* User Courses Section */
+.card {
+  margin: 20px;
+}
+
+.card img {
+  height: 300px;
+  margin-top: 10px;
+}
+/* User Courses section end */
+
+
+@media screen and (max-width: 62rem){/* Medium View Port */
+  /* User Courses section */
+  .card img {
+    height: 250px;
+    margin-top: 10px;
+  }
+  /* User Courses section  end */
+}
+
+@media screen and (max-width: 48rem){/* Small View Port */
+  /* User Courses section */
+  .card img {
+    height: 150px;
+    margin-top: 10px;
+  }
+  /* User Courses section  end */
+}

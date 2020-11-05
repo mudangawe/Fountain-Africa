@@ -1,8 +1,100 @@
 <div class="footer-wrap">
     <section id="bottom-nav">
+      <div class="nav-social-links">
+        <div class="nav-links">
+          <div class="category explore">
+            <h3>Explore</h3>
+            <ul>
+              <li>Courses</li>
+              <li>Books</li>
+              <li>Blog</li>
+              <li>Challenges</li>
+            </ul>
+          </div>
+          <div class="category company">
+            <h3>Company</h3>
+            <ul>
+              <li>About</li>
+              <li>Team</li>
+              <li>Careers</li>
+              <li>Career Guidence</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div class="category resources">
+            <h3>Resources</h3>
+            <ul>
+              <li>API</li>
+              <li>Community</li>
+              <li>Documentation</li>
+              <li>What's New</li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-links">
+          <ul>
+            <li><a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://www.medium.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-medium"></i></a></li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="cta-contact-details">
+        <div class="call-to-action">
+          <a [routerLink]="['/signup']"
+             routerLinkActive="router-link-active"
+             class="btn">Get Started</a>
+        </div>
+
+        <div class="contact-details">
+          <div class="detail email">
+            <div class="heading">
+              <p><i class="fa fa-envelope"></i></p>
+              <h3>Email</h3>
+            </div>
+            <p><a href="mailto:{{email}}">{{email}}</a></p>
+          </div>
+
+         <div class="detail phone">
+            <div class="heading">
+              <p><i class="fa fa-phone"></i></p>
+              <h3>Phone</h3>
+            </div>
+            <p><a href="tel:+27{{phone}}">{{phone}}</a></p>
+          </div>
+
+          <div class="detail address">
+            <div class="heading">
+              <p><i class="fa fa-home"></i></p>
+              <h3>Address</h3>
+            </div>
+            <address>
+              <p>
+                <span>{{address.street}}</span>
+                <span class="pl-3">{{address.surburb}}</span>
+                <span class="pl-3">{{address.city}}</span>
+                <span class="pl-3">{{address.postalCode}}</span>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="call-to-action">
-        
+
+    <section id="more-info">
+        <div class="info">
+          <p>&copy; 2020 Fountain Africa</p>
+        </div>
+        <div class="info">
+          <p>
+            <a href="#">Terms</a>
+            <span>|</span>
+            <a href="#">Privacy</a>
+            <span>|</span>
+            <a href="#">Sitemap</a>
+          </p>
+        </div>
     </section>
 </div>

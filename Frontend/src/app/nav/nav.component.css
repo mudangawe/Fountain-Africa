@@ -4,6 +4,7 @@
     top: 0; */
     width: 100%;
     height: fit-content;
+    z-index: 2;
 }
 
 #nav .navbar-brand img {
@@ -13,13 +14,12 @@
 .nav-item{
     margin-left: 2.5rem;
 }
-.nav-item .btn{
-    background-color: rgba(238, 83, 98, 0.6);
-}
+
 .nav-item a:hover{
     cursor: pointer;
     color: rgba(238, 83, 98, 0.6);
 }
+
 ng-sidebar-container{
     height: 100vh;
     display: absolute;
@@ -30,9 +30,18 @@ ng-sidebar-container{
     width: 300px;
     padding: 2em; 
 }
+
+#nav .navbar-nav .log a:hover {
+    border: 1px solid #292b2c;
+}
+
+#nav .dropdown-menu {
+    background-color:  #292b2c;
+    border-radius: unset;
+}
 @media screen and (max-width: 48rem) { /* Medium Viewport */
     #nav .navbar-nav .log a {
-        border: 1px solid #403f4c;
+        border: 1px solid #292b2c;
         border-radius: unset;
     }
 }
