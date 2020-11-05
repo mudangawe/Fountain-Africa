@@ -1,6 +1,5 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {RouterModule} from '@angular/router'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -20,9 +19,8 @@ import { ClassComponent } from './classes/subjects/class/class.component';
 import { VideoComponent } from './classes/dialog/video/video.component';
 import { QuestionsComponent } from './classes/dialog/questions/questions.component';
 import { SubjectComponent } from './classes/dialog/subject/subject.component'
-import { LibraryComponent } from './library/library.component';
 import { AboutComponent } from './about/about.component';
-
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +29,6 @@ import { AboutComponent } from './about/about.component';
     FooterComponent,
     SignupComponent,
     WelcomeComponent,
-    LibraryComponent,
     ClassesComponent,
     DialogComponent,
     SubjectsComponent,
@@ -41,14 +38,13 @@ import { AboutComponent } from './about/about.component';
     QuestionsComponent,
     SubjectComponent,
     LibraryComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
-    DashboardModule,
     NgxPaginationModule,
     NgbModule,
     DragScrollModule
