@@ -1,6 +1,14 @@
 /* Banner section */
-#banner {
+.banner {
   width: 100%;
+  padding: 2rem;
+  height: fit-content;
+  box-sizing: border-box;
+  background-image: url('../../assets/home.jpg');
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
 }
 
 #banner .call-to-action {
@@ -72,18 +80,17 @@
   font-size: 38px;
   text-align: center;
 }
-/* Banner section end */
-
-/* Explore section */
-#explore {
-  width: 100%;
-  margin: 0 0 20px 0;
-  /* border: 1px solid orange; */
+.banner img{
+   max-width: 100%;
 }
-
-.category-set{
+.associate{
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
+.associate > img{
+  z-index: 2;
 
 .category-set .wide {
   flex: 1.5;
@@ -120,19 +127,16 @@
   top: 40%;
   cursor: pointer;
   width: fit-content;
-  height: fit-content;
-  margin: 0 auto;
-  color: #fff;
 }
-
-.category-set .card .card-body h5 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.category-set .card .card-body hr {
-  border: 2px solid #fff;
+.banner .call-to-action {
   width: 150px;
+  height: 50px;
+  margin: 0 auto;
+  z-index: 1;
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: rgba(238, 83, 98, 0.6);
+  font-weight: 500px;
   margin: 15px auto;
 }
 
@@ -173,18 +177,17 @@
   background-color: rgba(236, 141, 129, 0.8);
 }
 
-.category-set .card .card-body:hover {
-  background-color: rgba(84, 88, 90, 0.5);
-}
 
-/* Explore section end */
 
 /* Why Us section */
 #why-us {
   width: 100%;
   margin: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
-
+ 
 .content-heading {
   width: fit-content;
   margin: 10px auto;
@@ -192,6 +195,7 @@
 
 .content-heading h2 {
   font-size: 2.5rem;
+  color: black;
   color: #4e4f50;
   text-align: center;
   font-weight: 500;
@@ -208,21 +212,47 @@
 }
 /* Why Us section end */
 
+/* Meet the team sectiom */
+#team{
+  margin-top: 2rem;
+  background-color: #68c2e8;
+  height: fit-content;
+  box-sizing: border-box;
+  text-align: center;
+}
+.team-heading h2 {
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+}
+.card img{
+  border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card{
+  width: 23%;
+  padding: 1.2rem;
+  border-style: none;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* Meet the team section end*/
 @media screen and (max-width: 62rem) { /* Medium Viewport */
   /* Banner section */
-  #banner .call-to-action {
-    position: absolute;
-    top: 40vh;
-    left: 40vw;
+  .card{
+    width: 45%;
+    padding: 1.2rem;
+    border-style: none;
   }
-
-  #banner .call-to-action a {
-    font-size: 1.1rem;
-  }
-
-  #banner .banner-image {
-    height: 65vh;
-  }
+ 
+  
   /* Banner section end */
   /*Section 
 
@@ -240,26 +270,13 @@
 
 @media screen and (max-width: 48rem) { /* Small Viewport */
   /* Banner section */
-  #banner .call-to-action {
-    position: absolute;
-    top: 25vh;
-    left: 35vw;
-  }
-
-  #banner .call-to-action a {
-    font-size: 1rem;
-  }
-
-  #banner .banner-image {
-    height: 40vh;
-  }
+  
   /* Banner section end */
 
-  /* Explore section */
-  .category-set{
-    display: flex;
-    flex-flow: column;
+  .card{
+    width: 100%;
+    padding: 1.2rem;
+    border-style: none;
   }
-  /* Explore section end */
 
 }

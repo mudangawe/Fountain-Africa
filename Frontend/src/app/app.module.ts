@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
+import {SidebarModule} from 'ng-sidebar'
 import {NgxPaginationModule} from 'ngx-pagination';
 import {FormsModule} from '@angular/forms';
 import {LibraryComponent} from './library/library.component';
@@ -22,13 +23,14 @@ import { SubjectComponent } from './classes/dialog/subject/subject.component'
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     FooterComponent,
     SignupComponent,
-    WelcomeComponent,
+    WelcomeComponent,  
     ClassesComponent,
     DialogComponent,
     SubjectsComponent,
@@ -42,12 +44,13 @@ import { LoginComponent } from './login/login.component';
     LoginComponent
   ],
   imports: [
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    BrowserModule,
+    NgbModule,
+    SidebarModule.forRoot()
+    DragScrollModule,
     FormsModule,
     NgxPaginationModule,
-    NgbModule,
-    DragScrollModule
   ],
   providers: [
     Title

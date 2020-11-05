@@ -3,43 +3,32 @@
     /* position: absolute;
     top: 0; */
     width: 100%;
-    height: 10vh;
+    height: fit-content;
     z-index: 2;
-    background-color: #292b2c;
 }
 
 #nav .navbar-brand img {
     width: 80px;
     height: auto;
 }
-
-#nav .navbar-brand {
-    color: #fff;
-    font-weight: 600;
+.nav-item{
+    margin-left: 2.5rem;
 }
 
-#nav .navbar-toggler {
-    border-color: #fff;
+.nav-item a:hover{
+    cursor: pointer;
+    color: rgba(238, 83, 98, 0.6);
 }
 
-#nav .navbar-nav a {
-    color: #fff;
-    min-width: 100px;
-    text-align: center;
-    background-color:  #292b2c;
-    padding: 8px 0;
+ng-sidebar-container{
+    height: 100vh;
+    display: absolute;
+    z-index: 1;
 }
-
-#nav .navbar-nav a:hover {
-    color: #fff;
-    background-color: #4e4f50;
-    border-radius: 5px;
-}
-
-#nav .navbar-nav .log a {
-    font-weight: 600;
-    border-radius: 5px;
-    border: 1px solid #fff;
+::ng-deep .ng-sidebar{
+    background-color: aliceblue;
+    width: 300px;
+    padding: 2em; 
 }
 
 #nav .navbar-nav .log a:hover {
@@ -50,11 +39,6 @@
     background-color:  #292b2c;
     border-radius: unset;
 }
-
-#nav .log-divider {
-    color: white;
-  }
-
 @media screen and (max-width: 48rem) { /* Medium Viewport */
     #nav .navbar-nav .log a {
         border: 1px solid #292b2c;
